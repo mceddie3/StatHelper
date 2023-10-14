@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import Controller.Statistics;
 
 public class StandardError implements Statistics{
     private double SE;

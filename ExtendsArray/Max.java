@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+import Controller.Statistics;
 public class Max implements Statistics {
     private double max;
     public void setMax(double max) {
@@ -8,8 +8,5 @@ public class Max implements Statistics {
     public double Calculate(ArrayList<Double> array) {
         max = array.get(array.size() - 1);
         return max;
-    }
-    public String toString() {
-        return "The maximum of the set is:        " + max;
     }
 }

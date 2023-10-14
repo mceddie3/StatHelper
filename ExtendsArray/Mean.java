@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import Controller.Statistics;
 
 public class Mean implements Statistics {
     private double mean;
@@ -12,8 +13,5 @@ public class Mean implements Statistics {
         }
         mean = add/array.size();
         return mean;
-    }
-    public String toString() {
-        return "The mean of the set is: " + mean;
     }
 }

@@ -1,8 +1,7 @@
 import java.util.ArrayList;
+import Controller.Statistics;
 
 public class SampleVarience implements Statistics {
-    private double varience;
-    private double ss;
     public double Calculate(ArrayList<Double> array) {
         double ss = 0.0;
         double sum = 0.0;
@@ -16,8 +15,5 @@ public class SampleVarience implements Statistics {
         }
         varience = ss/(array.size()-1);
         return varience;
-    }
-    public String toString() {
-        return "The Sum Of Squared Deviations is: " + ss + "\n" + "The Varience is:                  " + varience + "\n" + "The Standard Deviation is: ";
     }
 }
