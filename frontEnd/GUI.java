@@ -1,6 +1,7 @@
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
-
+import Controller.Statistics;
+import Model.Data;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -93,18 +94,17 @@ class GUI implements ActionListener {
         panel2.setBorder(new EmptyBorder(50, 500, 50, 500));
         panel2.add(subTitle);
         mainPanel.setBorder(new EmptyBorder(50, 500, 500, 500));
-        mainPanel.setBackground(Color.BLUE);
         panel = new JPanel();
         panel.add(dataSetText);
         panel.add(submitButton);
         panel.add(submitSuccess);
         panel.setBorder(new EmptyBorder(0, 500, 40, 500));
         panel3 = new JPanel();
-        panel3.setBorder(new EmptyBorder(50, 500, 50, 500));
+        panel3.setBorder(new EmptyBorder(0, 500, 50, 500));
         panel3.add(dropDown);
         panel3.add(calculate);
         panel4 = new JPanel();
-        panel4.setBorder(new EmptyBorder(50, 500, 50, 500));
+        panel4.setBorder(new EmptyBorder(0, 500, 20, 500));
         panel4.add(label2);
         mainPanel.add(panel2);
         mainPanel.add(panel);

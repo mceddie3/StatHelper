@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import Controller.Statistics;
 
 public class Median implements Statistics{
     private double median;
@@ -15,9 +16,6 @@ public class Median implements Statistics{
             median = (array.get(index - 1) + array.get(index));
             median = median/2;
         }
-    return median;
-    }
-    public String toString() {
-        return "The median of the set is:         " + median;
+        return median;
     }
 }

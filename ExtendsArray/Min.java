@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import Controller.Statistics;
 
 public class Min implements Statistics {
     private double min;
@@ -8,8 +9,5 @@ public class Min implements Statistics {
     public double Calculate(ArrayList<Double> array) {
         min = array.get(0);
         return min;
-    }
-    public String toString() {
-        return "The minimum of the set is:        " + min;
     }
 }
